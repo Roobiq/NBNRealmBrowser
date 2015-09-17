@@ -6,7 +6,7 @@ install:
 - bundle
 - bundle exec pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/NBNRealmBrowser.xcworkspace -scheme NBNRealmBrowser-Example -sdk iphonesimulator8.4 ONLY_ACTIVE_ARCH=NO -destination name="iPhone 5s" | xcpretty -c
+- set -o pipefail && xcodebuild build test -workspace Example/NBNRealmBrowser.xcworkspace -scheme NBNRealmBrowser-Example -sdk iphonesimulator8.4 ONLY_ACTIVE_ARCH=NO -destination name="iPhone 5s" | xcpretty -c
 - pod lib lint --quick
 after_success:
 - bundle exec slather
