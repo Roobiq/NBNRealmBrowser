@@ -1,4 +1,5 @@
 language: objective-c
+osx_image: xcode64
 cache: cocoapods
 podfile: Example/Podfile
 install:
