@@ -176,7 +176,7 @@
         case RLMPropertyTypeDate:
         case RLMPropertyTypeObject:
         case RLMPropertyTypeArray:
-            stringValue = [(NSData *)[object objectForKeyedSubscript:aProperty.name] description];
+//            stringValue = [(NSData *)[object objectForKeyedSubscript:aProperty.name] description];
             break;
     }
     return stringValue;
